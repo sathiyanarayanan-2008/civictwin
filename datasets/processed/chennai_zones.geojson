@@ -1,0 +1,1109 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.222,
+              13.048
+            ],
+            [
+              80.244,
+              13.048
+            ],
+            [
+              80.245,
+              13.033
+            ],
+            [
+              80.223,
+              13.033
+            ],
+            [
+              80.222,
+              13.048
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "layer_type": "zone",
+        "id": 1,
+        "name": "T. Nagar",
+        "zone_code": "TN-01",
+        "risk_level": "High",
+        "elevation_m": 7.2,
+        "drainage_capacity": 42.0,
+        "vulnerability_score": 0.82,
+        "population": 280000,
+        "threat": "Commercial impervious runoff and Mambalam canal backflow"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.205,
+              12.992
+            ],
+            [
+              80.232,
+              12.992
+            ],
+            [
+              80.23,
+              12.968
+            ],
+            [
+              80.206,
+              12.968
+            ],
+            [
+              80.205,
+              12.992
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "layer_type": "zone",
+        "id": 2,
+        "name": "Velachery",
+        "zone_code": "VEL-02",
+        "risk_level": "Critical",
+        "elevation_m": 4.1,
+        "drainage_capacity": 32.0,
+        "vulnerability_score": 0.94,
+        "population": 340000,
+        "threat": "Velachery lake overflow and Pallikaranai marsh inundation"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.244,
+              13.012
+            ],
+            [
+              80.268,
+              13.012
+            ],
+            [
+              80.267,
+              12.99
+            ],
+            [
+              80.243,
+              12.99
+            ],
+            [
+              80.244,
+              13.012
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "layer_type": "zone",
+        "id": 3,
+        "name": "Adyar",
+        "zone_code": "ADY-03",
+        "risk_level": "High",
+        "elevation_m": 3.8,
+        "drainage_capacity": 48.0,
+        "vulnerability_score": 0.78,
+        "population": 220000,
+        "threat": "Adyar river estuary surge and coastal high-tide backwater"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.19,
+              13.018
+            ],
+            [
+              80.215,
+              13.018
+            ],
+            [
+              80.214,
+              12.995
+            ],
+            [
+              80.189,
+              12.995
+            ],
+            [
+              80.19,
+              13.018
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "layer_type": "zone",
+        "id": 4,
+        "name": "Guindy",
+        "zone_code": "GDY-04",
+        "risk_level": "Moderate",
+        "elevation_m": 12.4,
+        "drainage_capacity": 60.0,
+        "vulnerability_score": 0.55,
+        "population": 190000,
+        "threat": "Kathipara cloverleaf underpass water accumulation"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.198,
+              13.098
+            ],
+            [
+              80.225,
+              13.098
+            ],
+            [
+              80.224,
+              13.072
+            ],
+            [
+              80.197,
+              13.072
+            ],
+            [
+              80.198,
+              13.098
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "layer_type": "zone",
+        "id": 5,
+        "name": "Anna Nagar",
+        "zone_code": "AN-05",
+        "risk_level": "Low",
+        "elevation_m": 16.5,
+        "drainage_capacity": 75.0,
+        "vulnerability_score": 0.32,
+        "population": 310000,
+        "threat": "Otteri Nullah localized localized stormwater bottlenecks"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.142,
+              13.05
+            ],
+            [
+              80.17,
+              13.05
+            ],
+            [
+              80.169,
+              13.025
+            ],
+            [
+              80.141,
+              13.025
+            ],
+            [
+              80.142,
+              13.05
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "layer_type": "zone",
+        "id": 6,
+        "name": "Porur",
+        "zone_code": "POR-06",
+        "risk_level": "High",
+        "elevation_m": 9.2,
+        "drainage_capacity": 45.0,
+        "vulnerability_score": 0.76,
+        "population": 260000,
+        "threat": "Porur lake surplus sluice discharge into Chembarambakkam channel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.228,
+              12.978
+            ],
+            [
+              80.255,
+              12.978
+            ],
+            [
+              80.254,
+              12.952
+            ],
+            [
+              80.227,
+              12.952
+            ],
+            [
+              80.228,
+              12.978
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "layer_type": "zone",
+        "id": 7,
+        "name": "Perungudi (OMR)",
+        "zone_code": "PGD-07",
+        "risk_level": "Critical",
+        "elevation_m": 4.5,
+        "drainage_capacity": 35.0,
+        "vulnerability_score": 0.9,
+        "population": 210000,
+        "threat": "Pallikaranai buffer encroachment and IT expressway water logging"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.085,
+              12.94
+            ],
+            [
+              80.118,
+              12.94
+            ],
+            [
+              80.117,
+              12.91
+            ],
+            [
+              80.084,
+              12.91
+            ],
+            [
+              80.085,
+              12.94
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "layer_type": "zone",
+        "id": 8,
+        "name": "Tambaram",
+        "zone_code": "TAM-08",
+        "risk_level": "Moderate",
+        "elevation_m": 22.0,
+        "drainage_capacity": 58.0,
+        "vulnerability_score": 0.6,
+        "population": 390000,
+        "threat": "Mudichur low-lying basin stormwater collection"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.211,
+            12.989
+          ],
+          [
+            80.2185,
+            12.981
+          ],
+          [
+            80.224,
+            12.968
+          ]
+        ]
+      },
+      "properties": {
+        "layer_type": "road",
+        "id": 1001,
+        "name": "Velachery Bypass Road",
+        "category": "Arterial",
+        "elevation_m": 4.3,
+        "surface_water_mm": 15.0,
+        "flood_risk_score": 0.78,
+        "is_closed": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.203,
+            13.007
+          ],
+          [
+            80.222,
+            13.023
+          ],
+          [
+            80.241,
+            13.031
+          ]
+        ]
+      },
+      "properties": {
+        "layer_type": "road",
+        "id": 1002,
+        "name": "Anna Salai (Guindy to Nandanam)",
+        "category": "Arterial",
+        "elevation_m": 9.5,
+        "surface_water_mm": 5.0,
+        "flood_risk_score": 0.28,
+        "is_closed": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.201,
+            13.008
+          ],
+          [
+            80.187,
+            13.023
+          ],
+          [
+            80.174,
+            13.031
+          ]
+        ]
+      },
+      "properties": {
+        "layer_type": "road",
+        "id": 1003,
+        "name": "Mount-Poonamallee Road (MIOT Access)",
+        "category": "Arterial",
+        "elevation_m": 5.9,
+        "surface_water_mm": 28.0,
+        "flood_risk_score": 0.85,
+        "is_closed": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.231,
+            13.045
+          ],
+          [
+            80.234,
+            13.038
+          ],
+          [
+            80.236,
+            13.032
+          ]
+        ]
+      },
+      "properties": {
+        "layer_type": "road",
+        "id": 1004,
+        "name": "Usman Road & South Usman Flyover Base",
+        "category": "Primary",
+        "elevation_m": 6.8,
+        "surface_water_mm": 20.0,
+        "flood_risk_score": 0.74,
+        "is_closed": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.215,
+            13.008
+          ],
+          [
+            80.236,
+            13.011
+          ],
+          [
+            80.256,
+            13.005
+          ]
+        ]
+      },
+      "properties": {
+        "layer_type": "road",
+        "id": 1005,
+        "name": "Sardar Patel Road (Guindy - Adyar)",
+        "category": "Arterial",
+        "elevation_m": 8.2,
+        "surface_water_mm": 8.0,
+        "flood_risk_score": 0.38,
+        "is_closed": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.252,
+            12.988
+          ],
+          [
+            80.244,
+            12.964
+          ],
+          [
+            80.235,
+            12.942
+          ]
+        ]
+      },
+      "properties": {
+        "layer_type": "road",
+        "id": 1006,
+        "name": "OMR (Rajiv Gandhi Salai - Perungudi)",
+        "category": "Arterial",
+        "elevation_m": 4.8,
+        "surface_water_mm": 22.0,
+        "flood_risk_score": 0.82,
+        "is_closed": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.162,
+            13.042
+          ],
+          [
+            80.151,
+            13.034
+          ],
+          [
+            80.141,
+            13.022
+          ]
+        ]
+      },
+      "properties": {
+        "layer_type": "road",
+        "id": 1007,
+        "name": "Porur Kundrathur Main Road",
+        "category": "Primary",
+        "elevation_m": 8.8,
+        "surface_water_mm": 12.0,
+        "flood_risk_score": 0.62,
+        "is_closed": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.21,
+            13.041
+          ],
+          [
+            80.202,
+            13.024
+          ],
+          [
+            80.197,
+            13.012
+          ]
+        ]
+      },
+      "properties": {
+        "layer_type": "road",
+        "id": 1008,
+        "name": "Inner Ring Road (100 Feet Road Jafferkhanpet)",
+        "category": "Arterial",
+        "elevation_m": 6.2,
+        "surface_water_mm": 26.0,
+        "flood_risk_score": 0.81,
+        "is_closed": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.1876,
+          13.0234
+        ]
+      },
+      "properties": {
+        "layer_type": "infrastructure",
+        "id": 101,
+        "name": "MIOT International Hospital",
+        "category": "Hospital",
+        "status": "Operational",
+        "critical_level": "Critical",
+        "capacity": 1000,
+        "elevation_m": 6.8,
+        "vulnerability": 0.72
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.2573,
+          13.0062
+        ]
+      },
+      "properties": {
+        "layer_type": "infrastructure",
+        "id": 102,
+        "name": "Fortis Malar Hospital Adyar",
+        "category": "Hospital",
+        "status": "Operational",
+        "critical_level": "Critical",
+        "capacity": 250,
+        "elevation_m": 5.2,
+        "vulnerability": 0.65
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.1444,
+          13.036
+        ]
+      },
+      "properties": {
+        "layer_type": "infrastructure",
+        "id": 103,
+        "name": "Sri Ramachandra Medical Centre",
+        "category": "Hospital",
+        "status": "Operational",
+        "critical_level": "Critical",
+        "capacity": 1500,
+        "elevation_m": 14.5,
+        "vulnerability": 0.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.2405,
+          13.0298
+        ]
+      },
+      "properties": {
+        "layer_type": "infrastructure",
+        "id": 104,
+        "name": "Apollo Speciality Hospital Nandanam",
+        "category": "Hospital",
+        "status": "Operational",
+        "critical_level": "High",
+        "capacity": 320,
+        "elevation_m": 8.0,
+        "vulnerability": 0.58
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.2078,
+          12.951
+        ]
+      },
+      "properties": {
+        "layer_type": "infrastructure",
+        "id": 105,
+        "name": "Dr. Kamakshi Memorial Hospital",
+        "category": "Hospital",
+        "status": "Operational",
+        "critical_level": "Critical",
+        "capacity": 400,
+        "elevation_m": 4.6,
+        "vulnerability": 0.88
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.1882,
+          13.0175
+        ]
+      },
+      "properties": {
+        "layer_type": "infrastructure",
+        "id": 201,
+        "name": "Chennai Trade Centre Emergency Shelter",
+        "category": "Shelter",
+        "status": "Operational",
+        "critical_level": "High",
+        "capacity": 3500,
+        "elevation_m": 12.1,
+        "vulnerability": 0.35
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.2355,
+          13.0125
+        ]
+      },
+      "properties": {
+        "layer_type": "infrastructure",
+        "id": 202,
+        "name": "Anna University Relief Center",
+        "category": "Shelter",
+        "status": "Operational",
+        "critical_level": "High",
+        "capacity": 4000,
+        "elevation_m": 15.2,
+        "vulnerability": 0.25
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.2195,
+          12.9892
+        ]
+      },
+      "properties": {
+        "layer_type": "infrastructure",
+        "id": 203,
+        "name": "Guru Nanak College Relief Shelter",
+        "category": "Shelter",
+        "status": "Operational",
+        "critical_level": "Medium",
+        "capacity": 2200,
+        "elevation_m": 5.9,
+        "vulnerability": 0.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.215,
+          12.977
+        ]
+      },
+      "properties": {
+        "layer_type": "infrastructure",
+        "id": 301,
+        "name": "Velachery Lake Surplus Drain Pump Station",
+        "category": "Drainage Pump",
+        "status": "Operational",
+        "critical_level": "Critical",
+        "capacity": 85000,
+        "elevation_m": 3.9,
+        "vulnerability": 0.85
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.228,
+          13.0385
+        ]
+      },
+      "properties": {
+        "layer_type": "infrastructure",
+        "id": 302,
+        "name": "Mambalam Canal Stormwater Sluice & Pump",
+        "category": "Drainage Pump",
+        "status": "Operational",
+        "critical_level": "High",
+        "capacity": 62000,
+        "elevation_m": 6.8,
+        "vulnerability": 0.75
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.221,
+          12.9732
+        ]
+      },
+      "properties": {
+        "layer_type": "infrastructure",
+        "id": 401,
+        "name": "TANGEDCO 230kV Velachery Substation",
+        "category": "Power Substation",
+        "status": "Operational",
+        "critical_level": "Critical",
+        "capacity": 450,
+        "elevation_m": 4.2,
+        "vulnerability": 0.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.2085,
+          13.009
+        ]
+      },
+      "properties": {
+        "layer_type": "infrastructure",
+        "id": 402,
+        "name": "TANGEDCO Guindy Industrial 110kV Substation",
+        "category": "Power Substation",
+        "status": "Operational",
+        "critical_level": "High",
+        "capacity": 320,
+        "elevation_m": 11.5,
+        "vulnerability": 0.45
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.2065,
+          13.0112
+        ]
+      },
+      "properties": {
+        "layer_type": "infrastructure",
+        "id": 501,
+        "name": "Guindy Fire & Rescue Station (TNFRS)",
+        "category": "Fire Station",
+        "status": "Operational",
+        "critical_level": "High",
+        "capacity": 8,
+        "elevation_m": 12.8,
+        "vulnerability": 0.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.2315,
+          13.0402
+        ]
+      },
+      "properties": {
+        "layer_type": "infrastructure",
+        "id": 502,
+        "name": "T. Nagar Fire Station",
+        "category": "Fire Station",
+        "status": "Operational",
+        "critical_level": "High",
+        "capacity": 5,
+        "elevation_m": 7.8,
+        "vulnerability": 0.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.2065,
+          13.0112
+        ]
+      },
+      "properties": {
+        "layer_type": "resource",
+        "id": 1,
+        "name": "Rescue Boat Unit 1",
+        "resource_type": "Rescue Boat",
+        "status": "Available",
+        "assigned_zone": "Guindy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.2065,
+          13.0112
+        ]
+      },
+      "properties": {
+        "layer_type": "resource",
+        "id": 2,
+        "name": "Rescue Boat Unit 2",
+        "resource_type": "Rescue Boat",
+        "status": "Available",
+        "assigned_zone": "Guindy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.2315,
+          13.0402
+        ]
+      },
+      "properties": {
+        "layer_type": "resource",
+        "id": 3,
+        "name": "Rescue Boat Unit 3",
+        "resource_type": "Rescue Boat",
+        "status": "Available",
+        "assigned_zone": "T. Nagar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.218,
+          12.9815
+        ]
+      },
+      "properties": {
+        "layer_type": "resource",
+        "id": 4,
+        "name": "Rescue Boat Unit 4",
+        "resource_type": "Rescue Boat",
+        "status": "Dispatched",
+        "assigned_zone": "Velachery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.1876,
+          13.0234
+        ]
+      },
+      "properties": {
+        "layer_type": "resource",
+        "id": 5,
+        "name": "ALS Ambulance 108-Alpha",
+        "resource_type": "Ambulance",
+        "status": "Available",
+        "assigned_zone": "Guindy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.2573,
+          13.0062
+        ]
+      },
+      "properties": {
+        "layer_type": "resource",
+        "id": 6,
+        "name": "ALS Ambulance 108-Bravo",
+        "resource_type": "Ambulance",
+        "status": "Available",
+        "assigned_zone": "Adyar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.1444,
+          13.036
+        ]
+      },
+      "properties": {
+        "layer_type": "resource",
+        "id": 7,
+        "name": "ALS Ambulance 108-Charlie",
+        "resource_type": "Ambulance",
+        "status": "Available",
+        "assigned_zone": "Porur"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.218,
+          12.9815
+        ]
+      },
+      "properties": {
+        "layer_type": "resource",
+        "id": 8,
+        "name": "ALS Ambulance 108-Delta",
+        "resource_type": "Ambulance",
+        "status": "Dispatched",
+        "assigned_zone": "Velachery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.2341,
+          13.0418
+        ]
+      },
+      "properties": {
+        "layer_type": "resource",
+        "id": 9,
+        "name": "ALS Ambulance 108-Echo",
+        "resource_type": "Ambulance",
+        "status": "Available",
+        "assigned_zone": "T. Nagar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.215,
+          12.977
+        ]
+      },
+      "properties": {
+        "layer_type": "resource",
+        "id": 10,
+        "name": "High-Flow De-watering Pump 01",
+        "resource_type": "High-Flow Pump",
+        "status": "Available",
+        "assigned_zone": "Velachery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.228,
+          13.0385
+        ]
+      },
+      "properties": {
+        "layer_type": "resource",
+        "id": 11,
+        "name": "High-Flow De-watering Pump 02",
+        "resource_type": "High-Flow Pump",
+        "status": "Available",
+        "assigned_zone": "T. Nagar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.1882,
+          13.0175
+        ]
+      },
+      "properties": {
+        "layer_type": "resource",
+        "id": 12,
+        "name": "Emergency Relief Squad 1",
+        "resource_type": "Emergency Squad",
+        "status": "Available",
+        "assigned_zone": "Guindy"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.2355,
+          13.0125
+        ]
+      },
+      "properties": {
+        "layer_type": "resource",
+        "id": 13,
+        "name": "Emergency Relief Squad 2",
+        "resource_type": "Emergency Squad",
+        "status": "Available",
+        "assigned_zone": "Adyar"
+      }
+    }
+  ]
+}

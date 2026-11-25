@@ -1,0 +1,47 @@
+{
+  "model_version": "CivicTwin-RF-v1.0",
+  "model_algorithm": "RandomForestClassifier",
+  "baseline_dummy_accuracy": 0.7008,
+  "metrics": {
+    "accuracy": 0.896,
+    "precision": 0.8211,
+    "recall": 0.8342,
+    "f1_score": 0.8276,
+    "roc_auc": 0.9459,
+    "confusion_matrix": [
+      [
+        404,
+        34
+      ],
+      [
+        31,
+        156
+      ]
+    ]
+  },
+  "gradient_boosting_comparison_f1": 0.8319,
+  "feature_importances": {
+    "rainfall_intensity_mmh": 0.348,
+    "accumulated_rainfall_mm": 0.3208,
+    "elevation_m": 0.102,
+    "drainage_capacity_mmh": 0.0437,
+    "impervious_surface_ratio": 0.0378,
+    "distance_to_water_body_m": 0.074,
+    "historical_flood_events": 0.0149,
+    "drainage_maintenance_score": 0.0588
+  },
+  "features_list": [
+    "rainfall_intensity_mmh",
+    "accumulated_rainfall_mm",
+    "elevation_m",
+    "drainage_capacity_mmh",
+    "impervious_surface_ratio",
+    "distance_to_water_body_m",
+    "historical_flood_events",
+    "drainage_maintenance_score"
+  ],
+  "training_samples": 1875,
+  "test_samples": 625,
+  "training_timestamp": "2026-11-25T12:32:11.834059",
+  "notes": "Trained on synthetic Chennai hydrological dataset; verified with balanced class weights."
+}
