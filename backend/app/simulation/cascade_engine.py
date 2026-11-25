@@ -69,6 +69,7 @@ class CascadingCrisisEngine:
         drainage_efficiency: float = 0.60,
         initial_closed_roads: List[int] = None,
         disabled_facilities: List[int] = None,
+        pump_boost_roads: List[int] = None,
         max_depth: int = 5
     ) -> Dict[str, Any]:
         """
@@ -79,6 +80,8 @@ class CascadingCrisisEngine:
             initial_closed_roads = []
         if disabled_facilities is None:
             disabled_facilities = []
+        if pump_boost_roads is None:
+            pump_boost_roads = []
 
         active_disruptions: Dict[int, Dict[str, Any]] = {}
         cascade_events: List[Dict[str, Any]] = []
@@ -90,12 +93,13 @@ class CascadingCrisisEngine:
         # Roads directly flooded
         for r in CHENNAI_ROADS:
             road_id = r["id"]
-            effective_drain = r["drainage_capacity"] * drainage_efficiency
+            boost = 25.0 if road_id in pump_boost_roads else 0.0
+            effective_drain = (r["drainage_capacity"] + boost) * drainage_efficiency
             rain_surplus = max(0.0, rainfall_intensity_mmh - effective_drain)
-            elev_vuln = max(0.0, (14.0 - r["elevation_m"]) / 14.0)
-            accumulated_water = rain_surplus * rainfall_duration_h * (1.0 + elev_vuln)
+            elev_vuln = max(0.20, (15.0 - r["elevation_m"]) / 15.0)
+            accumulated_water = rain_surplus * rainfall_duration_h * elev_vuln
             
-            is_directly_closed = (road_id in initial_closed_roads) or (accumulated_water > 80.0)
+            is_directly_closed = (road_id in initial_closed_roads) or (accumulated_water > 105.0)
             
             if is_directly_closed:
                 active_disruptions[road_id] = {
@@ -119,7 +123,8 @@ class CascadingCrisisEngine:
         # Facilities directly affected by water or manual scenario injection
         for inf in CHENNAI_INFRASTRUCTURE:
             inf_id = inf["id"]
-            if inf_id in disabled_facilities or (inf["elevation_m"] < 4.5 and rainfall_intensity_mmh > 90.0):
+            site_flooded = (inf["elevation_m"] < 4.8 and rainfall_intensity_mmh > 90.0 and drainage_efficiency < 0.70)
+            if inf_id in disabled_facilities or site_flooded:
                 active_disruptions[inf_id] = {
                     "node_id": inf_id,
                     "name": inf["name"],

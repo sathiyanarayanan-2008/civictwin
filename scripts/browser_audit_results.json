@@ -1,0 +1,214 @@
+{
+  "timestamp": "2026-11-25T18:33:28.295Z",
+  "routesTested": [
+    {
+      "name": "01_landing_page",
+      "path": "/",
+      "status": 200,
+      "screenshot": "C:\\Users\\User\\OneDrive\\Desktop\\civic twin\\docs\\screenshots\\01_landing_page.png",
+      "passed": true
+    },
+    {
+      "name": "02_command_centre",
+      "path": "/app/command-centre",
+      "status": 200,
+      "screenshot": "C:\\Users\\User\\OneDrive\\Desktop\\civic twin\\docs\\screenshots\\02_command_centre.png",
+      "passed": true
+    },
+    {
+      "name": "03_digital_twin_3d",
+      "path": "/app/digital-twin",
+      "status": 200,
+      "screenshot": "C:\\Users\\User\\OneDrive\\Desktop\\civic twin\\docs\\screenshots\\03_digital_twin_3d.png",
+      "passed": true
+    },
+    {
+      "name": "04_predictive_risk_map",
+      "path": "/app/risk-map",
+      "status": 200,
+      "screenshot": "C:\\Users\\User\\OneDrive\\Desktop\\civic twin\\docs\\screenshots\\04_predictive_risk_map.png",
+      "passed": true
+    },
+    {
+      "name": "05_ai_agent_centre",
+      "path": "/app/agents",
+      "status": 200,
+      "screenshot": "C:\\Users\\User\\OneDrive\\Desktop\\civic twin\\docs\\screenshots\\05_ai_agent_centre.png",
+      "passed": true
+    },
+    {
+      "name": "06_simulation_lab",
+      "path": "/app/simulation-lab",
+      "status": 200,
+      "screenshot": "C:\\Users\\User\\OneDrive\\Desktop\\civic twin\\docs\\screenshots\\06_simulation_lab.png",
+      "passed": true
+    },
+    {
+      "name": "07_prevention_comparator",
+      "path": "/app/prevention-comparator",
+      "status": 200,
+      "screenshot": "C:\\Users\\User\\OneDrive\\Desktop\\civic twin\\docs\\screenshots\\07_prevention_comparator.png",
+      "passed": true
+    },
+    {
+      "name": "08_resource_planner",
+      "path": "/app/resource-planner",
+      "status": 200,
+      "screenshot": "C:\\Users\\User\\OneDrive\\Desktop\\civic twin\\docs\\screenshots\\08_resource_planner.png",
+      "passed": true
+    },
+    {
+      "name": "09_citizen_reporting",
+      "path": "/app/citizen-reporting",
+      "status": 200,
+      "screenshot": "C:\\Users\\User\\OneDrive\\Desktop\\civic twin\\docs\\screenshots\\09_citizen_reporting.png",
+      "passed": true
+    },
+    {
+      "name": "10_weather_intelligence",
+      "path": "/app/weather",
+      "status": 200,
+      "screenshot": "C:\\Users\\User\\OneDrive\\Desktop\\civic twin\\docs\\screenshots\\10_weather_intelligence.png",
+      "passed": true
+    },
+    {
+      "name": "11_infrastructure_monitoring",
+      "path": "/app/infrastructure",
+      "status": 200,
+      "screenshot": "C:\\Users\\User\\OneDrive\\Desktop\\civic twin\\docs\\screenshots\\11_infrastructure_monitoring.png",
+      "passed": true
+    },
+    {
+      "name": "12_explainable_ai",
+      "path": "/app/explainable-ai",
+      "status": 200,
+      "screenshot": "C:\\Users\\User\\OneDrive\\Desktop\\civic twin\\docs\\screenshots\\12_explainable_ai.png",
+      "passed": true
+    },
+    {
+      "name": "13_alerts_notifications",
+      "path": "/app/alerts",
+      "status": 200,
+      "screenshot": "C:\\Users\\User\\OneDrive\\Desktop\\civic twin\\docs\\screenshots\\13_alerts_notifications.png",
+      "passed": true
+    },
+    {
+      "name": "14_analytics_reports",
+      "path": "/app/analytics",
+      "status": 200,
+      "screenshot": "C:\\Users\\User\\OneDrive\\Desktop\\civic twin\\docs\\screenshots\\14_analytics_reports.png",
+      "passed": true
+    },
+    {
+      "name": "15_project_architecture",
+      "path": "/app/architecture",
+      "status": 200,
+      "screenshot": "C:\\Users\\User\\OneDrive\\Desktop\\civic twin\\docs\\screenshots\\15_project_architecture.png",
+      "passed": true
+    },
+    {
+      "name": "16_settings_data_sources",
+      "path": "/app/settings",
+      "status": 200,
+      "screenshot": "C:\\Users\\User\\OneDrive\\Desktop\\civic twin\\docs\\screenshots\\16_settings_data_sources.png",
+      "passed": true
+    },
+    {
+      "name": "17_user_profile",
+      "path": "/app/profile",
+      "status": 200,
+      "screenshot": "C:\\Users\\User\\OneDrive\\Desktop\\civic twin\\docs\\screenshots\\17_user_profile.png",
+      "passed": true
+    },
+    {
+      "name": "18_about_project",
+      "path": "/app/about",
+      "status": 200,
+      "screenshot": "C:\\Users\\User\\OneDrive\\Desktop\\civic twin\\docs\\screenshots\\18_about_project.png",
+      "passed": true
+    }
+  ],
+  "consoleErrors": [],
+  "failedRequests": [
+    {
+      "url": "blob:http://127.0.0.1:5173/724487e9-7ec4-4e20-abb2-82bc23156185",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "blob:http://127.0.0.1:5173/c0721f01-8c88-4141-8d17-3858e8d3b50c",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "blob:http://127.0.0.1:5173/feefacda-84ff-422b-b287-4e5e450cb1c4",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/12/2960/1898.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/12/2961/1898.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/12/2960/1897.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/12/2961/1897.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/12/2960/1899.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/12/2961/1899.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/12/2959/1898.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/12/2959/1897.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/12/2962/1898.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/12/2962/1897.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/12/2959/1899.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/12/2960/1896.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/12/2961/1896.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/12/2962/1899.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/12/2959/1896.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://tile.openstreetmap.org/12/2958/1898.png",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "blob:http://127.0.0.1:5173/0c22bf74-532c-4e17-82ad-89250ed209a6",
+      "failure": "net::ERR_ABORTED"
+    }
+  ]
+}

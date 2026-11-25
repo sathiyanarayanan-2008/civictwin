@@ -17,7 +17,21 @@ def get_model_metrics():
     metrics_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "ml", "models", "metrics.json"))
     if os.path.exists(metrics_path):
         with open(metrics_path, "r", encoding="utf-8") as f:
-            return json.load(f)
+            data = json.load(f)
+            m = data.get("metrics", {})
+            return {
+                "model_version": data.get("model_version", "CivicTwin-RF-v1.0"),
+                "model_algorithm": data.get("model_algorithm", "RandomForestClassifier"),
+                "accuracy": m.get("accuracy", 0.896),
+                "precision": m.get("precision", 0.8211),
+                "recall": m.get("recall", 0.8342),
+                "f1_score": m.get("f1_score", 0.8276),
+                "roc_auc": m.get("roc_auc", 0.9459),
+                "feature_importances": data.get("feature_importances", {}),
+                "training_samples": data.get("training_samples", 1875),
+                "test_samples": data.get("test_samples", 625),
+                "raw_metrics": data
+            }
     return {
         "model_version": "CivicTwin-RF-v1.0",
         "accuracy": 0.896,
@@ -27,15 +41,22 @@ def get_model_metrics():
 
 @router.get("/export/pdf")
 def export_scenario_pdf():
-    """Generate and download a real PDF crisis prevention scenario report."""
+    """Generate and download a real PDF crisis prevention scenario report using live simulation."""
+    from app.simulation.cascade_engine import cascade_engine
+    sim = cascade_engine.simulate_cascade(
+        rainfall_intensity_mmh=95.0,
+        rainfall_duration_h=4.0,
+        drainage_efficiency=0.55,
+        initial_closed_roads=[1001, 1004]
+    )
     sample_data = {
         "scenario_name": "Scenario A — Monsoon Surge Inundation",
-        "rainfall_mmh": 85.0,
-        "affected_roads": 4,
-        "inaccessible_facilities": 2,
-        "travel_time_min": 28.5,
-        "coverage_pct": 62.0,
-        "disruption_score": 0.58
+        "rainfall_mmh": 95.0,
+        "affected_roads": sim["affected_roads_count"],
+        "inaccessible_facilities": sim["inaccessible_facilities_count"],
+        "travel_time_min": sim["avg_emergency_travel_time_min"],
+        "coverage_pct": sim["resource_coverage_pct"],
+        "disruption_score": sim["disruption_score"]
     }
     pdf_bytes = generate_pdf_report(sample_data)
     return Response(
@@ -46,12 +67,30 @@ def export_scenario_pdf():
 
 @router.get("/export/csv")
 def export_analytics_csv():
-    """Generate and download CSV of simulation scenario comparisons."""
-    records = [
-        {"scenario_name": "Scenario A: Heavy Rainfall", "rainfall_mmh": 95.0, "affected_roads": 4, "inaccessible_facilities": 2, "travel_time_min": 28.5, "coverage_pct": 62.0, "disruption_score": 0.58},
-        {"scenario_name": "Scenario B: Road Disruption", "rainfall_mmh": 60.0, "affected_roads": 3, "inaccessible_facilities": 1, "travel_time_min": 22.0, "coverage_pct": 72.0, "disruption_score": 0.44},
-        {"scenario_name": "Scenario C: Compound Substation Failure", "rainfall_mmh": 140.0, "affected_roads": 6, "inaccessible_facilities": 4, "travel_time_min": 36.0, "coverage_pct": 45.0, "disruption_score": 0.82}
+    """Generate and download CSV of real calculated simulation scenario comparisons."""
+    from app.simulation.cascade_engine import cascade_engine
+    scenarios_cfg = [
+        ("Scenario A: Heavy Rainfall", 95.0, 4.0, 0.55, [1001, 1004]),
+        ("Scenario B: Road Disruption", 60.0, 3.0, 0.70, [1003, 1008]),
+        ("Scenario C: Compound Substation Failure", 140.0, 5.0, 0.35, [1001, 1003, 1006])
     ]
+    records = []
+    for name, rain, dur, drain, closed in scenarios_cfg:
+        res = cascade_engine.simulate_cascade(
+            rainfall_intensity_mmh=rain,
+            rainfall_duration_h=dur,
+            drainage_efficiency=drain,
+            initial_closed_roads=closed
+        )
+        records.append({
+            "scenario_name": name,
+            "rainfall_mmh": rain,
+            "affected_roads": res["affected_roads_count"],
+            "inaccessible_facilities": res["inaccessible_facilities_count"],
+            "travel_time_min": res["avg_emergency_travel_time_min"],
+            "coverage_pct": res["resource_coverage_pct"],
+            "disruption_score": res["disruption_score"]
+        })
     csv_str = generate_csv_analytics(records)
     return Response(
         content=csv_str,

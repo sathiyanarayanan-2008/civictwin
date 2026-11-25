@@ -228,7 +228,48 @@ def seed_database():
         ]
         db.add_all(scenarios)
 
-        # 10. Seed Notifications
+        # 10. Seed Initial Recommendations
+        initial_recs = [
+            Recommendation(
+                id=1,
+                title="Pre-stage 2 High-Flow Mobile Pumps at Mount-Poonamallee Sluice",
+                category="Drainage Intervention",
+                priority="Critical",
+                target_zone="Guindy / Manapakkam",
+                description="Deploy heavy-duty diesel de-watering pumps to prevent Mount-Poonamallee Road closure and preserve MIOT Hospital ambulance access.",
+                rationale="Prevents cascading tier-2 isolation of 1000-bed trauma hospital; reduces modelled delay by 14.5 minutes.",
+                estimated_impact="Avoids MIOT corridor shutdown; saves 65 ICU ingress routes.",
+                requires_approval=True,
+                status="Pending Approval"
+            ),
+            Recommendation(
+                id=2,
+                title="Implement Traffic Contraflow & Emergency Blue Lane on Anna Salai",
+                category="Traffic Diversion",
+                priority="High",
+                target_zone="Guindy to Nandanam",
+                description="Reserve median northbound lane of Anna Salai exclusively for emergency ambulances and disaster management convoys.",
+                rationale="Compensates for Inner Ring Road congestion due to localized Jafferkhanpet ponding.",
+                estimated_impact="Maintains average ambulance speed above 40 km/h.",
+                requires_approval=True,
+                status="Pending Approval"
+            ),
+            Recommendation(
+                id=3,
+                title="Stage Emergency Mobile Generator at Velachery 230kV Substation",
+                category="Power Resilience",
+                priority="Critical",
+                target_zone="Velachery",
+                description="Provide secondary power redundancy to ensure 4 stormwater pumps remain operational even if local feeder lines trip.",
+                rationale="Single point of failure; pump outage would inundate 400 residential dwellings in low-elevation basin.",
+                estimated_impact="Maintains 85,000 L/min stormwater discharge into Pallikaranai marsh.",
+                requires_approval=True,
+                status="Pending Approval"
+            )
+        ]
+        db.add_all(initial_recs)
+
+        # 11. Seed Notifications
         notifications = [
             Notification(
                 title="Monsoon Surge Alert: South Chennai Basins",

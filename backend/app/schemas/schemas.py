@@ -179,6 +179,7 @@ class CitizenReportResponse(BaseModel):
     image_url: Optional[str]
     status: str
     priority: str
+    duplicate_of_id: Optional[int] = None
     ai_verified: bool
     ai_category_confidence: float
     created_at: datetime

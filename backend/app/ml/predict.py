@@ -8,6 +8,7 @@ import os
 import json
 import joblib
 import numpy as np
+import pandas as pd
 from typing import Dict, Any, List
 
 _loaded_model = None
@@ -31,6 +32,12 @@ def _get_model():
                 pass
     return _loaded_model, _model_metrics
 
+# Pre-warm model in memory at module load
+try:
+    _get_model()
+except Exception:
+    pass
+
 def predict_urban_risk(
     rainfall_intensity_mmh: float,
     accumulated_rainfall_mm: float,
@@ -46,7 +53,17 @@ def predict_urban_risk(
     """
     model, metrics = _get_model()
 
-    input_vector = np.array([[
+    feature_names = [
+        "rainfall_intensity_mmh",
+        "accumulated_rainfall_mm",
+        "elevation_m",
+        "drainage_capacity_mmh",
+        "impervious_surface_ratio",
+        "distance_to_water_body_m",
+        "historical_flood_events",
+        "drainage_maintenance_score"
+    ]
+    input_df = pd.DataFrame([[
         rainfall_intensity_mmh,
         accumulated_rainfall_mm,
         elevation_m,
@@ -55,11 +72,11 @@ def predict_urban_risk(
         distance_to_water_body_m,
         historical_flood_events,
         drainage_maintenance_score
-    ]])
+    ]], columns=feature_names)
 
     # Inference with trained model or transparent fallback heuristic
     if model is not None:
-        prob = float(model.predict_proba(input_vector)[0][1])
+        prob = float(model.predict_proba(input_df)[0][1])
     else:
         # Transparent physical runoff heuristic fallback
         effective_drain = drainage_capacity_mmh * drainage_maintenance_score

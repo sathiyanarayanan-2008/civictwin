@@ -30,13 +30,14 @@ def compare_scenarios(
     )
 
     # 2. Intervention Run: Drainage boosted via staged pumps, traffic rerouted
-    # Result: Mount-Poonamallee kept open by pumps, Velachery bypass surface water lowered
+    # Result: Mount-Poonamallee and Usman Road kept open by pumps, Velachery bypass surface water lowered
     intervention_result = cascade_engine.simulate_cascade(
         rainfall_intensity_mmh=baseline_rainfall,
         rainfall_duration_h=baseline_duration,
         drainage_efficiency=intervention_drainage_eff,
         initial_closed_roads=[], # Managed proactively
-        disabled_facilities=[]
+        disabled_facilities=[],
+        pump_boost_roads=[1003, 1004] # Staged high-flow mobile pumps
     )
 
     # Calculate actual computed differences
