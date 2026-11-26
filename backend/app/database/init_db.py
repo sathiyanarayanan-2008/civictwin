@@ -10,7 +10,7 @@ from app.core.security import get_password_hash
 from app.models.entities import (
     User, City, Zone, Infrastructure, RoadSegment,
     InfrastructureDependency, EmergencyResource, WeatherRecord,
-    SimulationScenario, Incident, Notification
+    SimulationScenario, Incident, Notification, Recommendation
 )
 from app.geospatial.chennai_data import (
     CHENNAI_CITY, CHENNAI_ZONES, CHENNAI_INFRASTRUCTURE,
