@@ -158,6 +158,6 @@ To deliver maximum impact during hackathon judging, follow this timed walkthroug
 - [x] 5-Role RBAC authentication operational
 - [x] 20 application screenshots captured in `docs/screenshots/`
 - [x] Comprehensive test report generated in `FINAL_TEST_REPORT.md`
-- [x] Remote GitHub repository synced to `https://github.com/sathiyanarayanan-2008/civictwin-ai.git`
+- [x] Remote GitHub repository synced to `https://github.com/sathiyanarayanan-2008/civictwin.git`
 
 **FINAL VERDICT:** CivicTwin AI is **100% OPERATIONAL, RIGOROUSLY AUDITED, AND READY FOR WINNING EVALUATION AT BUILDFEST 2026.**

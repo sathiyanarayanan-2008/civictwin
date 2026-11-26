@@ -27,7 +27,7 @@ npm run build
 1. **GitHub Remote URL:**
    The repository is connected and synced to:
    ```
-   https://github.com/sathiyanarayanan-2008/civictwin-ai.git
+   https://github.com/sathiyanarayanan-2008/civictwin.git
    ```
 2. **Secrets Verification:**
    - `.gitignore` prevents `civictwin.db`, `.env`, `node_modules/`, and `venv/` from entering version control.
@@ -42,7 +42,7 @@ Render provides free hosting for Python FastAPI services and free PostgreSQL dat
 ### Option A: 1-Click Blueprint Deployment (`render.yaml`)
 1. Log in to [Render](https://dashboard.render.com/) with your GitHub account.
 2. In the Render Dashboard, click **New +** $\to$ **Blueprint**.
-3. Select the repository: `sathiyanarayanan-2008/civictwin-ai`.
+3. Select the repository: `sathiyanarayanan-2008/civictwin`.
 4. Render will read `render.yaml` and configure:
    - **Service Name:** `civictwin-backend`
    - **Environment:** `Python 3.11`
@@ -55,7 +55,7 @@ Render provides free hosting for Python FastAPI services and free PostgreSQL dat
 
 ### Option B: Manual Web Service Deployment
 1. Click **New +** $\to$ **Web Service**.
-2. Connect `https://github.com/sathiyanarayanan-2008/civictwin-ai.git`.
+2. Connect `https://github.com/sathiyanarayanan-2008/civictwin.git`.
 3. Set the following parameters:
    - **Name:** `civictwin-backend`
    - **Root Directory:** `backend`
@@ -82,7 +82,7 @@ Vercel provides blazing-fast edge CDN hosting for Vite/React applications with a
 ### Option A: Deployment via Vercel Web Dashboard (Recommended)
 1. Log in to [Vercel](https://vercel.com/) with your GitHub account.
 2. Click **Add New...** $\to$ **Project**.
-3. Import your repository: `sathiyanarayanan-2008/civictwin-ai`.
+3. Import your repository: `sathiyanarayanan-2008/civictwin`.
 4. Configure Project Settings:
    - **Framework Preset:** `Vite`
    - **Root Directory:** Click *Edit* and select `frontend`.
@@ -147,9 +147,9 @@ Per hackathon security and privacy guidelines, the assistant **cannot** enter yo
 
 1. **GitHub Account:**  
    Confirm repository visibility is set to **Public** on GitHub:  
-   Navigate to `https://github.com/sathiyanarayanan-2008/civictwin-ai/settings` $\to$ Change visibility to **Public**.
+   Navigate to `https://github.com/sathiyanarayanan-2008/civictwin/settings` $\to$ Change visibility to **Public**.
 2. **Render Account Login:**  
-   Sign in to [Render](https://dashboard.render.com/) with GitHub and authorize the `civictwin-ai` repository.
+   Sign in to [Render](https://dashboard.render.com/) with GitHub and authorize the `civictwin` repository.
 3. **Vercel Account Login:**  
    Sign in to [Vercel](https://vercel.com/) with GitHub to import and host the `frontend/` directory.
 4. **Learnix Labs Submission Portal:**  
@@ -162,7 +162,7 @@ Per hackathon security and privacy guidelines, the assistant **cannot** enter yo
 When completing the Learnix Labs submission form, supply the three required URLs:
 
 1. **GitHub Repository URL:**  
-   `https://github.com/sathiyanarayanan-2008/civictwin-ai.git`
+   `https://github.com/sathiyanarayanan-2008/civictwin.git`
 2. **Public Live Demonstration URL:**  
    `https://<your-chosen-subdomain>.vercel.app`
 3. **Learnix Labs Project Entry:**  
