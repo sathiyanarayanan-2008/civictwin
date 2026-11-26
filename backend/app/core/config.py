@@ -1,4 +1,5 @@
 from pydantic_settings import BaseSettings
+from pydantic import field_validator
 from typing import List
 import os
 
@@ -37,6 +38,13 @@ class Settings(BaseSettings):
     
     # Database (Supports PostgreSQL or local SQLite fallback)
     DATABASE_URL: str = _raw_db_url
+
+    @field_validator("DATABASE_URL", mode="before")
+    @classmethod
+    def assemble_db_url(cls, v: str) -> str:
+        if isinstance(v, str) and v.startswith("postgres://"):
+            return v.replace("postgres://", "postgresql://", 1)
+        return v
     
     # Weather
     OPEN_METEO_API_URL: str = "https://api.open-meteo.com/v1/forecast"

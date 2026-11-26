@@ -19,8 +19,20 @@ from app.geospatial.chennai_data import (
 import json
 
 def init_database():
-    """Create all tables in the database."""
-    Base.metadata.create_all(bind=engine)
+    """Create all tables in the database with connection retry resilience for cloud deployments."""
+    import time
+    for attempt in range(1, 6):
+        try:
+            Base.metadata.create_all(bind=engine)
+            print("Database schema verified and tables initialized.")
+            break
+        except Exception as e:
+            if attempt < 5:
+                print(f"Database connection attempt {attempt} failed ({e}). Retrying in 2 seconds...")
+                time.sleep(2)
+            else:
+                print(f"Failed to connect to database after 5 attempts: {e}")
+                raise e
 
 def seed_database():
     """Seed initial data if not already populated."""
