@@ -196,8 +196,8 @@ Judges can explore the platform immediately without mandatory registration:
 
 ### Step 1: Clone Repository
 ```bash
-git clone https://github.com/sathiyanarayanan-2008/civictwin.git
-cd civictwin
+git clone https://github.com/sathiyanarayanan-2008/civictwin-ai.git
+cd civictwin-ai
 ```
 
 ### Step 2: Backend Setup
