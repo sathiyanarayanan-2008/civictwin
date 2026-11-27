@@ -243,7 +243,6 @@ def seed_database():
         # 10. Seed Initial Recommendations
         initial_recs = [
             Recommendation(
-                id=1,
                 title="Pre-stage 2 High-Flow Mobile Pumps at Mount-Poonamallee Sluice",
                 category="Drainage Intervention",
                 priority="Critical",
@@ -255,7 +254,6 @@ def seed_database():
                 status="Pending Approval"
             ),
             Recommendation(
-                id=2,
                 title="Implement Traffic Contraflow & Emergency Blue Lane on Anna Salai",
                 category="Traffic Diversion",
                 priority="High",
@@ -267,7 +265,6 @@ def seed_database():
                 status="Pending Approval"
             ),
             Recommendation(
-                id=3,
                 title="Stage Emergency Mobile Generator at Velachery 230kV Substation",
                 category="Power Resilience",
                 priority="Critical",
