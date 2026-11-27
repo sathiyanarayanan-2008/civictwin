@@ -5,8 +5,15 @@
  */
 
 const metaEnv = (import.meta as any).env || {};
-const API_BASE = metaEnv.VITE_API_BASE_URL || 'http://localhost:8000/api/v1';
-export const WS_URL = metaEnv.VITE_WS_URL || 'ws://localhost:8000/api/v1/ws';
+const rawApiBase: string = metaEnv.VITE_API_BASE_URL || 'http://localhost:8000/api/v1';
+const API_BASE = rawApiBase.endsWith('/api/v1') 
+  ? rawApiBase 
+  : `${rawApiBase.replace(/\/+$/, '')}/api/v1`;
+
+const rawWsUrl: string = metaEnv.VITE_WS_URL || 'ws://localhost:8000/api/v1/ws';
+export const WS_URL = rawWsUrl.endsWith('/api/v1/ws') || rawWsUrl.endsWith('/ws')
+  ? rawWsUrl
+  : `${rawWsUrl.replace(/\/+$/, '')}/api/v1/ws`;
 
 // Robust fetch helper with timeout and fallback
 async function fetchApi<T>(endpoint: string, options?: RequestInit, fallbackData?: T): Promise<T> {

@@ -75,23 +75,20 @@ def readiness_check():
         "agents": "active (8/8)"
     }
 
-# Register API v1 Routers
+# Register API Routers (both with /api/v1 prefix and direct root prefix for complete URL resilience)
 api_v1_prefix = settings.API_V1_PREFIX
+routers = [
+    auth_router, dashboard_router, geospatial_router, weather_risk_router,
+    agents_router, simulations_router, resources_opt_router, reports_router,
+    recommendations_router, analytics_router, notifications_router, copilot_router
+]
 
-app.include_router(auth_router, prefix=api_v1_prefix)
-app.include_router(dashboard_router, prefix=api_v1_prefix)
-app.include_router(geospatial_router, prefix=api_v1_prefix)
-app.include_router(weather_risk_router, prefix=api_v1_prefix)
-app.include_router(agents_router, prefix=api_v1_prefix)
-app.include_router(simulations_router, prefix=api_v1_prefix)
-app.include_router(resources_opt_router, prefix=api_v1_prefix)
-app.include_router(reports_router, prefix=api_v1_prefix)
-app.include_router(recommendations_router, prefix=api_v1_prefix)
-app.include_router(analytics_router, prefix=api_v1_prefix)
-app.include_router(notifications_router, prefix=api_v1_prefix)
-app.include_router(copilot_router, prefix=api_v1_prefix)
+for r in routers:
+    app.include_router(r, prefix=api_v1_prefix)
+    app.include_router(r)
 
-# WebSocket Endpoint for Live Agent Orchestration Streaming
+# WebSocket Endpoints for Live Agent Orchestration Streaming (both /api/v1/ws and /ws)
+@app.websocket("/ws")
 @app.websocket("/api/v1/ws")
 async def websocket_endpoint(websocket: WebSocket):
     await websocket.accept()
