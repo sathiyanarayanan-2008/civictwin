@@ -89,13 +89,13 @@ Vercel provides blazing-fast edge CDN hosting for Vite/React applications with a
    - **Build Command:** `npm run build`
    - **Output Directory:** `dist`
 5. Expand **Environment Variables** and enter:
-   - `VITE_API_BASE_URL` = `https://<your-render-backend-name>.onrender.com/api/v1`
-   - `VITE_WS_URL` = `wss://<your-render-backend-name>.onrender.com/api/v1/ws`
+   - `VITE_API_BASE_URL` = `https://civictwin-6bmn.onrender.com/api/v1`
+   - `VITE_WS_URL` = `wss://civictwin-6bmn.onrender.com/api/v1/ws`
    - `VITE_DEFAULT_CITY` = `Chennai`
    - `VITE_ENABLE_3D_TWIN` = `true`
 6. Click **Deploy**.
 7. Vercel will build and deploy the site in ~30 seconds.
-8. Copy your live website URL (e.g., `https://civictwin-ai.vercel.app`).
+8. Copy your live website URL (e.g., `https://civictwin.vercel.app`).
 
 ### Option B: Deployment via Vercel CLI (PowerShell)
 ```powershell
